@@ -1,14 +1,21 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("fontawesome-all.min.css");
-
-
-
-*{
-	border: 1px solid red !important;
+#stuffimaderecently{
+	color: #181818;
 }
+
+.thanks{
+}
+
+#findme{
+	color:white;
+}
+
 html {
   scroll-behavior: smooth;
  }
+
+ h3{
+	color:black;
+}
 
 
 html, body, div, span, applet, object,
@@ -62,7 +69,6 @@ body {
 
 mark {
 	background-color: transparent;
-	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -155,13 +161,11 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
 		margin: 0 0 0.75em 0;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		text-decoration: none;
-		color: inherit;
 	}
 
 	h2, h3, h4, h5, h6 {
@@ -175,17 +179,27 @@ input, select, textarea {
 	}
 
 		h1 strong {
+			color:#ffffff;
 			font-weight: 700;
 		}
 
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
+		color:#ffffff;
 	}
 
 	h3 {
 		font-size: 1.5em;
 		letter-spacing: -0.015em;
+		background-size:auto;
+		background-repeat: no-repeat;
+	}
+
+	h3 img{
+		background-size:auto;
+		background-repeat: no-repeat;
+
 	}
 
 	em, i {
@@ -1642,11 +1656,6 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
 
 		.image.left {
 			float: left;
@@ -1760,6 +1769,8 @@ input, select, textarea {
 			margin: 0.25em;
 			top: 0;
 			padding-left: 0;
+			font-size: 2em;
+			text-decoration: none;
 		}
 
 			ul.social li a {
@@ -1775,93 +1786,22 @@ input, select, textarea {
 				position: relative;
 			}
 
-				ul.social li a:before {
-					background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					-moz-transition: background-color .2s ease-in-out;
-					-webkit-transition: background-color .2s ease-in-out;
-					-ms-transition: background-color .2s ease-in-out;
-					transition: background-color .2s ease-in-out;
-					background-color: #444;
-					border-radius: 6px;
-					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-					color: #2E2E2E ;
-					display: block;
-					font-size: 26px;
-					height: 48px;
-					line-height: 48px;
-					text-align: center;
-					outline: 0;
-					overflow: hidden;
-					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
-					width: 48px;
-				}
 
 				ul.social li a.fa-twitter {
 					background-color: #2DAAE4;
 				}
 
-				ul.social li a.fa-facebook-f {
-					background-color: #3C5A98;
-				}
-
-				ul.social li a.fa-dribbble {
-					background-color: #C4376B;
-				}
 
 				ul.social li a.fa-linkedin-in {
 					background-color: #006599;
 				}
 
-				ul.social li a.fa-tumblr {
-					background-color: #51718A;
-				}
 
 				ul.social li a.fa-google-plus {
 					background-color: #DA2713;
 				}
 
-				ul.social li a.fa-github {
-					background-color: #FAFAFA;
-				}
 
-				ul.social li a.fa-rss {
-					background-color: #F2600B;
-				}
-
-				ul.social li a.fa-instagram {
-					background-color: #E0D7C8;
-				}
-
-				ul.social li a.fa-foursquare {
-					background-color: #39A3D4;
-				}
-
-				ul.social li a.fa-skype {
-					background-color: #10BEF1;
-				}
-
-				ul.social li a.fa-soundcloud {
-					background-color: #FE5419;
-				}
-
-				ul.social li a.fa-youtube {
-					background-color: #BF2E25;
-				}
-
-				ul.social li a.fa-blogger {
-					background-color: #FF6501;
-				}
-
-				ul.social li a.fa-flickr {
-					background-color: #0062DB;
-				}
-
-				ul.social li a.fa-vimeo {
-					background-color: #4C8AB0;
-				}
 
 				ul.social li a:hover {
 					top: -5px;
@@ -1871,22 +1811,7 @@ input, select, textarea {
 						background-color: transparent;
 					}
 
-/* Actions */
 
-	ul.actions {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.actions li {
-			display: inline-block;
-			margin: 0 0 0 1em;
-			padding-left: 0;
-		}
-
-			ul.actions li:first-child {
-				margin-left: 0;
-			}
 
 /* Box */
 
@@ -1905,17 +1830,6 @@ input, select, textarea {
 				margin-bottom: 0.5em;
 			}
 
-		.box.style2 h3 {
-			margin-bottom: 0.25em;
-		}
-
-		.box.style2 .image {
-			position: relative;
-			left: 2em;
-			top: 2em;
-			margin: -4em 0 4em -4em;
-			width: auto;
-		}
 
 /* Icons */
 
@@ -1953,16 +1867,6 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-		.icon.featured {
-			color: #EA8A95;
-			display: block;
-			margin: 0 0 1.5em 0;
-			cursor: default;
-		}
-
-			.icon.featured:before {
-				font-size: 6em;
-			}
 
 /* Wrappers */
 
@@ -1973,20 +1877,21 @@ input, select, textarea {
 		text-align: center;
 	}
 
-		.wrapper.style1 {
-			background-image: none;
-			background-color: #fff;
+		.wrapper.style1{
+			background-image: url("https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80");
+			background-size: cover;
+			background-repeat: no-repeat;
+			padding:40px;
+  			display:flex;
 		}
+
+		
 
 		.wrapper.style2 {
 			background-color: #fafafa;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
-		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
-		}
 
 		.wrapper.style4 {
 			background-color: #303030;
@@ -1994,7 +1899,7 @@ input, select, textarea {
 			text-shadow: -1px -1px 0px #181818;
 		}
 
-			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
+			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
 				color: #fff;
 			}
 
@@ -2012,6 +1917,10 @@ input, select, textarea {
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
 				}
+
+
+
+
 
 /* Nav */
 
@@ -2057,8 +1966,54 @@ input, select, textarea {
 			padding: 0 1.25em;
 		}
 
-
-
+		#nav a:hover {
+			color: rgb(0, 0, 0) !important;
+			background: linear-gradient(
+			45deg,
+			#ff0000,
+			#ff7300,
+			#fffb00,
+			#48ff00,
+			#00ffd5,
+			#002bff,
+			#7a00ff,
+			#ff00c8,
+			#ff0000
+		  );
+		  top: -2px;
+		  left: -2px;
+		  background-size: 400%;
+		  animation: glowing-button-85 20s linear infinite;
+		  transition: opacity 0.3s ease-in-out;
+		  border-radius: 10px;
+		  border: 2px solid rgb(0, 0, 0) !important
+		}
+		
+		
+		
+		@keyframes glowing-button-85 {
+		  0% {
+			background-position: 0 0;
+		  }
+		  50% {
+			background-position: 400% 0;
+		  }
+		  100% {
+			background-position: 0 0;
+		  }
+		}
+		
+		.button-85:after {
+		  z-index: -1;
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  background: #222;
+		  left: 0;
+		  top: 0;
+		  border-radius: 10px;
+		}
 
 
 			#nav a.active {
@@ -2104,8 +2059,12 @@ input, select, textarea {
 		}
 
 		#top p {
-			font-size: 1.5em;
+			font-size: 1.8em;
+			font-weight: 700;
 			line-height: 1.75em;
+			color:white;
+	
+
 		}
 
 			#top p a {
@@ -2300,13 +2259,6 @@ input, select, textarea {
 					margin-bottom: 1em;
 				}
 
-				.box .image.featured {
-					position: relative;
-					left: 20px;
-					top: 20px;
-					margin: -50px 0 50px -40px;
-					width: auto;
-				}
 
 				.box.style1 {
 					max-width: 32em;
@@ -2341,6 +2293,11 @@ input, select, textarea {
 					border-radius: 0;
 				}
 
+				#nav a:hover {
+					background-color: transparent;
+				}
+
+
 
 		/* Articles */
 
@@ -2360,4 +2317,8 @@ input, select, textarea {
 
 			#contact footer {
 				margin: 0;
+			}
+
+			.fa fa-linkedin{
+
 			}
