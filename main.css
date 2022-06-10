@@ -1964,6 +1964,7 @@ input, select, textarea {
 			height: 2.5em;
 			line-height: 2.5em;
 			padding: 0 1.25em;
+			width:150px;
 		}
 
 		#nav a:hover {
@@ -2082,6 +2083,7 @@ input, select, textarea {
 
 		/* Basic */
 
+
 			body {
 				font-size: 11pt;
 			}
@@ -2126,6 +2128,17 @@ input, select, textarea {
 
 		/* Articles */
 
+		#nav .container a {
+			position: relative;
+			display: block;
+			margin:center;
+			height: 2.5em;
+			line-height: 2.5em;
+
+			width:100px;
+
+		}
+
 			#top {
 				text-align: center;
 				padding: 5em 0;
@@ -2142,7 +2155,19 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
+		
 
+
+		#nav .container a {
+			position: relative;
+			display: block;
+			margin:center;
+			height: 2.5em;
+			line-height: 2.5em;
+
+			width:70px;
+
+		}
 			body {
 				padding-top: 44px;
 			}
@@ -2322,3 +2347,4 @@ input, select, textarea {
 			.fa fa-linkedin{
 
 			}
+
